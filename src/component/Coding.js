@@ -77,7 +77,8 @@ export default function Coding({setDisplayNav}) {
   const checkStatus = async (token) => {
     const options = {
       method: "GET",
-      url: 'https://judge0-ce.p.rapidapi.com/submissions' + "/" + token,
+      url: `https://judge0-ce.p.rapidapi.com/submissions/${token}`,
+
       params: { base64_encoded: "true", fields: "*" },
       headers: {
         "X-RapidAPI-Host": 'judge0-ce.p.rapidapi.com',
