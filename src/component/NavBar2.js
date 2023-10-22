@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
-import { TbCircuitSwitchOpen } from "react-icons/tb"
+
 import "../css/NavBar2.css"
 
 export default function NavBar({ color,theme,setTheme,themeArray }) {
